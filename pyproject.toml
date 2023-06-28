@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrdfsubset"
+version = "0.0.1"
+description = "Create RDF subsets based on ShEx constraints"
+readme = "README.md"
+authors = [{ name = "Andra Waagmeester", email = "andra@micelio.be" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["shex", "rdf", "subsets", "biohackathon"]
+dependencies = [
+    "rdflib",
+    "pyshex",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/micelio/PyRDFSubSet"
+
+[project.scripts]
+pyrdfsubset = "pyrdfsubset.__main__:main"
