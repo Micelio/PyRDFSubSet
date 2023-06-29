@@ -3,7 +3,6 @@ from pyshex import ShExEvaluator
 import io
 
 def get_subset(shex, rdf, inputformat="turtle", outputformat="turtle", subsettype="open"):
-
     graph = Graph()
     graph.parse(data=rdf, format=inputformat)
 
@@ -14,9 +13,7 @@ def get_subset(shex, rdf, inputformat="turtle", outputformat="turtle", subsettyp
 
     results = ShExEvaluator().evaluate(rdf, shex)
     for r in results:
-        print(r)
         if r.result:
-            print(r.focus)
             # Define the URI for which you want to retrieve the outgoing arcs
             uri = URIRef(r.focus)
 
