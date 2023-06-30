@@ -34,5 +34,5 @@ SELECT * WHERE {
 """
 shex = "https://raw.githubusercontent.com/kg-subsetting/biohackathon2020/main/use_cases/genewiki/genewiki.shex"
 get_sparql_subset(shex, sparql_query, "https://query.wikidata.org/sparql", "http://www.wikidata.org/entity/Q12136", subsettype="open")
-# shexeval(['-h'])
+
 
