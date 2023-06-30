@@ -31,7 +31,6 @@ def get_subset(shex, rdf, inputformat="turtle", outputformat="turtle", subsettyp
             # Process the results and add triples to the new graph
             for row in results:
                 predicate, obj = row
-                print(".")
                 new_graph.add((uri, predicate, obj))
 
             # Print the contents of the new graph

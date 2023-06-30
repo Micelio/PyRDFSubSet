@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrdfsubset"
-version = "0.0.5"
-description = "Create RDF subsets based on ShEx constraints"
+version = "0.1.5"
+description = "Create RDF subsets based on ShEx constraints and optionally SPARQL query results"
 readme = "README.md"
 authors = [{ name = "Andra Waagmeester", email = "andra@micelio.be" }]
 license = { file = "LICENSE" }
