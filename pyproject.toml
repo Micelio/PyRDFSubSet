@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrdfsubset"
-version = "0.1.2"
+version = "0.1.3"
 description = "Create RDF subsets based on ShEx constraints and optionally SPARQL query results. The development of this library started at the Biohackathon Japan in 2023 in Shodoshima"
 readme = "README.md"
 authors = [{ name = "Andra Waagmeester", email = "andra@micelio.be" }]
